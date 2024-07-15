@@ -38,7 +38,7 @@ public class App
                         String speak = sc.nextLine();   
                         if (speak == ""){
                             System.out.println("Olen " + hedgehog.getName() + " ja ikäni on " + hedgehog.getAge() + 
-                            ", mutta antaisitko silti syötteen?");
+                            " vuotta, mutta antaisitko silti syötteen?");
                         } else {
                             System.out.println(hedgehog.getName() + ": " + speak);
                         }
