@@ -3,9 +3,6 @@ package main;
 import java.util.Scanner;
 
 /**
- * Hello world!
- * 
- * /**
     Tehdään kerran alussa:
         1. git init
         2. git remote add .... (kopioi GitHub repositoryn sivulta)
@@ -21,17 +18,10 @@ public class App
 {
     public static void main( String[] args )
     {
-       // System.out.println( "Hello World!" );
 
         Hedgehog hedgehog = new Hedgehog();
 
-        //hedgehog.speak();
-
-        //Hedgehog hedgehogNew = new Hedgehog(); 
-
         Scanner sc = new Scanner(System.in);
-
-        //Hedgehog newHedgehog = null;
 
         boolean exit = false;
         while(!exit) {
@@ -44,7 +34,7 @@ public class App
 
                 switch(i) {
                     case 1:
-                        System.out.println("Mitä siili sanoo: ");
+                        System.out.println("Mitä siili sanoo:");
                         String speak = sc.nextLine();   
                         if (speak == ""){
                             System.out.println("Olen " + hedgehog.getName() + " ja ikäni on " + hedgehog.getAge() + 
@@ -57,9 +47,9 @@ public class App
 
 
                     case 2:
-                        System.out.println("Anna siilin nimi: ");
+                        System.out.println("Anna siilin nimi:");
                         String name = sc.nextLine();
-                        System.out.println("Anna siilin ikä: ");
+                        System.out.println("Anna siilin ikä:");
                         String ageString = sc.nextLine();
                         int age = Integer.parseInt(ageString);
 
@@ -81,7 +71,7 @@ public class App
                         exit = true;
                         break;
                     default:
-                        System.out.println("Syöte oli väärä0");
+                        System.out.println("Syöte oli väärä");
                         break;
                 }
             }
